@@ -39,9 +39,21 @@ class Instrucciones extends Module
 	IF_salida :="b0000000_00011_00010_000_00100_0110011".U
 	}
 	.elsewhen (io.addr_IF === 4.U) {
-	IF_salida :="b0000000_00010_00100_010_00011_0110011".U
+	IF_salida :="b0000000_00010_00100_010_00100_0110011".U
 	}
 	.elsewhen (io.addr_IF === 5.U) {
+	IF_salida :="b0000000_00100_00011_000_00010_0110011".U
+	}
+	.elsewhen (io.addr_IF === 6.U) {
+	IF_salida :="b0000000_00011_00010_001_00010_0110011".U
+	}
+	.elsewhen (io.addr_IF === 7.U) {
+	IF_salida :="b0000000_00100_00011_111_00010_0110011".U
+	}
+	.elsewhen (io.addr_IF === 8.U) {
+	IF_salida :="b0000000_00100_00011_100_00101_0110011".U
+	}
+	.elsewhen (io.addr_IF === 9.U) {
 	IF_salida :="b0000000_00100_00011_000_00010_0110011".U
 	}
 	

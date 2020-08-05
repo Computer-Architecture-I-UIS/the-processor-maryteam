@@ -45,32 +45,32 @@ class Procesador extends Module
 	val nbits: Int=32
 	val pc = RegInit(0.U(32.W))
 	
-	//Decodificacion
+	//Iniciar módulos
 	val ID = Module(new ID(nbits))
 	val Instru = Module(new Instrucciones())
 	val control = Module(new controldeco())
 	val ALU= Module(new ALU)
 	val addr_IF = RegInit(0.U(5.W))
-	val pp = RegInit(0.U(32.W))
+	val ALU_out = RegInit(0.U(32.W))
 	val mem = Mem(32, UInt(32.W))
-	//Dirrecion para las instrucciones
+	//Direcciones
 	Instru.io.addr_IF := addr_IF
 	
 
-	//Counter Program	
+	//Contador de Programa
 	pc      := Mux(((io.reset.asBool =/= 1.U) && (pc =/= 3.U))===1.U, pc +1.U, 0.U)
 	addr_IF := Mux(((io.reset.asBool =/= 1.U) && (pc =/= 3.U))===1.U, addr_IF, addr_IF+1.U)
 	ID.io.wen := Mux(pc === 2.U, 1.U.asBool, 0.U.asBool)
-	ID.io.rd := Mux(pc === 2.U, pp, 0.U)
+	ID.io.rd := Mux(pc === 2.U, ALU_out, 0.U)
 	
-	//INSTRUCCIONES
+	//Instrucciones
 	ID.io.instruction := Instru.io.instrucc
 	
 	control.io.cmd := ID.io.ctrl.cmd
 	ALU.io.sel := control.io.out.EX_ALU
 	ALU.io.in1 := ID.io.rs1
 	ALU.io.in2 := Mux( control.io.out.EX_mux3===1.U, ID.io.rs2  , ID.io.imm.asUInt)
-	pp := ALU.io.out
+	ALU_out := ALU.io.out
 	io.rs1 := ID.io.rs1
 	io.rs2 := ID.io.rs2
 	io.imm := ID.io.imm

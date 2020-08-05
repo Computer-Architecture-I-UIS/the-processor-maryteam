@@ -18,8 +18,6 @@ class controldeco extends Module
 
 		val cmd = Input(UInt(6.W))
 		val out	= Output(new decode_Bundle)
-		//val EX_MUL = UInt(3.W)
-		//val EX_MUL_en = UInt(1.W)
 		
 	})
 	
