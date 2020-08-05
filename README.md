@@ -35,7 +35,10 @@ a otro registro y luego al registro de destino
 
 RESULTADOS
 ----------
-Simulacion1
+Instrucciones de simulacion 1
+![s1](https://user-images.githubusercontent.com/67715438/89456581-ba73be80-d729-11ea-8394-6d17d37b299e.jpeg)
+
+Simulacion 1
 ![Simulacion1](https://user-images.githubusercontent.com/67715438/89456477-8a2c2000-d729-11ea-9f70-fad55d693277.jpeg)
 
 
