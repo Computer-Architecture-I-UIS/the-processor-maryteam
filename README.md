@@ -35,7 +35,7 @@ a otro registro y luego al registro de destino
 
 RESULTADOS
 ----------
-
-![Simulacion](https://user-images.githubusercontent.com/67715438/89454100-ceb5bc80-d725-11ea-995f-b788a80e33f8.jpeg)
+Simulacion1
+![Simulacion1](https://user-images.githubusercontent.com/67715438/89456477-8a2c2000-d729-11ea-9f70-fad55d693277.jpeg)
 
 
