@@ -35,11 +35,12 @@ a otro registro y luego al registro de destino
 
 RESULTADOS
 ----------
-Instrucciones de simulacion 1
-![s1](https://user-images.githubusercontent.com/67715438/89456581-ba73be80-d729-11ea-8394-6d17d37b299e.jpeg)
+Instrucciones y simulacion 1
 
-Simulacion 1
+![s1](https://user-images.githubusercontent.com/67715438/89457100-79c87500-d72a-11ea-9ca5-87e92df22ada.jpeg)
+
 ![Simulacion1](https://user-images.githubusercontent.com/67715438/89456477-8a2c2000-d729-11ea-9f70-fad55d693277.jpeg)
+
 
 Instruciones y simulacion  2
 
@@ -47,7 +48,7 @@ Instruciones y simulacion  2
 ![simulacion2](https://user-images.githubusercontent.com/67715438/89456805-06befe80-d72a-11ea-885c-8e083af51ccd.jpeg)
 
 
-Simulacion 3 
+Instruciones y simulacion 3 
 
 ![s3](https://user-images.githubusercontent.com/67715438/89456954-3d951480-d72a-11ea-807b-45926bd85e36.jpeg)
 ![simulacion3](https://user-images.githubusercontent.com/67715438/89456957-3f5ed800-d72a-11ea-8e0f-f3460cb17d44.jpeg)
