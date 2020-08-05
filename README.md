@@ -33,4 +33,7 @@ permitido por el procesador
 RESULTADOS
 ----------
 
+<p align="center">
+  <img src="https://github.com/Computer-Architecture-I-UIS/assembler-c-programming-maryteam/blob/master/Simulacion.jpeg" />
+</p>
 
