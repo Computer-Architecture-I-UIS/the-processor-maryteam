@@ -12,7 +12,7 @@ basicas como la adición,la sustración el corrimiento de registros la comparaci
 un archivo de registro de igual forma se emplearón unas instrucciones que se encargan de registrar variables 
 de entrada y decidir las operaciones a desarrollarse en el proceso
 
-Estos archivos se situan dentro de un archivo llamado procesador (caja negra) el cual unimos los archivos nombrados
+Estos archivos se situan dentro de un archivo llamado procesador (caja negra) el cual une los archivos nombrados
 anteriormente y con esto podemos simular y generar el  archivo en vivado que se usó para generar el tench_bench para 
 visualizar las salidad del procesador en el GTK Wave
 
