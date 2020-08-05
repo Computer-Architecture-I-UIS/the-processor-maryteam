@@ -28,3 +28,5 @@ cambiando el decodificador al nombrado en la descripción
 para poder visualizar todas las instruciones de la ALU se tendria que simular cada 3 instruciones ya que ese el el maximo
 permitido por el procesador
 
+4. Solo deja usar 3 registros 
+
