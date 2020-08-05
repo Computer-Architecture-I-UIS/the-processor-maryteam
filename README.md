@@ -47,5 +47,11 @@ Instruciones y simulacion  2
 ![simulacion2](https://user-images.githubusercontent.com/67715438/89456805-06befe80-d72a-11ea-885c-8e083af51ccd.jpeg)
 
 
+Simulacion 3 
+
+![s3](https://user-images.githubusercontent.com/67715438/89456954-3d951480-d72a-11ea-807b-45926bd85e36.jpeg)
+![simulacion3](https://user-images.githubusercontent.com/67715438/89456957-3f5ed800-d72a-11ea-8e0f-f3460cb17d44.jpeg)
+
+
 
 
