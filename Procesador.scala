@@ -34,12 +34,10 @@ class Procesador extends Module
 {
 	val io = IO(new Bundle {
 
-		//val rd_instru = Output(UInt(32.W))
 		val rs1 = Output(UInt(32.W))
 		val rs2 = Output(UInt(32.W))
 		val imm=Output(SInt(32.W))
 		val out = Output(UInt(32.W))
-		//val salAlu = Output(UInt(32.W))
 		val reset = Input(UInt(1.W))
 
 	})
@@ -47,9 +45,6 @@ class Procesador extends Module
 	val nbits: Int=32
 	val pc = RegInit(0.U(32.W))
 	
-	//Instrucciones	
-
-	//val Inst = Instructions//Me va a permitir cargar las instrucciones
 	//Decodificacion
 	val ID = Module(new ID(nbits))
 	val Instru = Module(new Instrucciones())
@@ -63,33 +58,12 @@ class Procesador extends Module
 	
 
 	//Counter Program	
-	when((io.reset.asBool =/= 1.U) && (pc =/= 3.U))
-	{
-		pc := pc +1.U
-		
-	}
-	.otherwise
-	{
-		addr_IF := addr_IF + 1.U
-		pc := 0.U
-		
-	}
-	
-
-	when(pc === 2.U)
-	{
-		ID.io.wen	:= 1.U.asBool
-		
-		ID.io.rd := pp
-	}
-	.otherwise 
-	{
-		ID.io.wen	:= 0.U.asBool
-		ID.io.rd := 0.U	
-	}
+	pc      := Mux(((io.reset.asBool =/= 1.U) && (pc =/= 3.U))===1.U, pc +1.U, 0.U)
+	addr_IF := Mux(((io.reset.asBool =/= 1.U) && (pc =/= 3.U))===1.U, addr_IF, addr_IF+1.U)
+	ID.io.wen := Mux(pc === 2.U, 1.U.asBool, 0.U.asBool)
+	ID.io.rd := Mux(pc === 2.U, pp, 0.U)
 	
 	//INSTRUCCIONES
-	//io.rd_instru := Instru.io.instrucc
 	ID.io.instruction := Instru.io.instrucc
 	
 	control.io.cmd := ID.io.ctrl.cmd
@@ -97,7 +71,6 @@ class Procesador extends Module
 	ALU.io.in1 := ID.io.rs1
 	ALU.io.in2 := Mux( control.io.out.EX_mux3===1.U, ID.io.rs2  , ID.io.imm.asUInt)
 	pp := ALU.io.out
-	//io.salAlu := ALU.io.out
 	io.rs1 := ID.io.rs1
 	io.rs2 := ID.io.rs2
 	io.imm := ID.io.imm
