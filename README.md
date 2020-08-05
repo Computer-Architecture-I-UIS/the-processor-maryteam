@@ -5,8 +5,8 @@ PROCESADOR
 DESCRIPCIÓN
 ----------------
 
-Para la simulación y puesta en marcha del procesador se usarón 5 archivos, en los cuales podemos destacar
-el decodificador dado a nuestra dispocisión para el desarrollo de la actividad  (carpeta ID de ottcore), 
+Para la simulación y puesta en marcha del procesador se usarón 6 archivos, en los cuales podemos destacar
+el decodificador dado a nuestra dispocisión para el desarrollo de la actividad  (carpeta ID de ottcore) y InstDeco, 
 tambien se emplearón los archivos de ALU (Unidad Logica de Aritmetica), la cual permitia hacer operacione
 basicas como la adición,la sustración el corrimiento de registros la comparación de variables entre otras ,
 un archivo de registro de igual forma se emplearón unas instrucciones que se encargan de registrar variables 
