@@ -30,7 +30,29 @@ permitido por el procesador
 
 4. Solo deja usar 3 registros 
 
+5.Si se usa el mismo registro en las operaciones seguidas presenta un error de simulación , se soluciono asignando ese valor
+a otro registro y luego al registro de destino
+
 RESULTADOS
 ----------
+Instrucciones y simulacion 1
+
+![s1](https://user-images.githubusercontent.com/67715438/89457100-79c87500-d72a-11ea-9ca5-87e92df22ada.jpeg)
+
+![Simulacion1](https://user-images.githubusercontent.com/67715438/89456477-8a2c2000-d729-11ea-9f70-fad55d693277.jpeg)
+
+
+Instruciones y simulacion  2
+
+![s2](https://user-images.githubusercontent.com/67715438/89456799-058dd180-d72a-11ea-97f1-36c5e7bf569f.jpeg)
+![simulacion2](https://user-images.githubusercontent.com/67715438/89456805-06befe80-d72a-11ea-885c-8e083af51ccd.jpeg)
+
+
+Instruciones y simulacion 3 
+
+![s3](https://user-images.githubusercontent.com/67715438/89456954-3d951480-d72a-11ea-807b-45926bd85e36.jpeg)
+![simulacion3](https://user-images.githubusercontent.com/67715438/89456957-3f5ed800-d72a-11ea-8e0f-f3460cb17d44.jpeg)
+
+
 
 
