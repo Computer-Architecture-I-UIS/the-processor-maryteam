@@ -30,6 +30,9 @@ permitido por el procesador
 
 4. Solo deja usar 3 registros 
 
+5.Si se usa el mismo registro en las operaciones seguidas presenta un error de simulación , se soluciono asignando ese valor
+a otro registro y luego al registro de destino
+
 RESULTADOS
 ----------
 
