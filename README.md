@@ -18,20 +18,35 @@ visualizar las salidad del procesador en el GTK Wave
 
 PROBLEMAS ENCONTRDADOS
 ----------------------
-1. El número total de inscripciones con el cual funciona el procesador son 3 ya que con un numero mayor empieza a precentar
-problemas que se corrigio
+1. Se tuvo que realizar contador para colocar un elemento de control
 
-2.Se presento un error con el decodificador el cual constaba  de que no leia valores mayores a 20 bits, el cual se soluciono
-cambiando el decodificador al nombrado en la descripción
+Listado de Instrucciones 
+------------------------
+Puede ejecutar:
+- sll
+- slli
+- srl 
+- srli
+- sra
+- srai
+- add
+- addi
+- sub
+- xor
+- xori
+- and
+- andi
+- or
+- ori
+- slt
+- sltu
+- slti
+- sltiu
 
-3.En el archivo ALU no se colocarón todas las instrucciones ya que el procesador representa las instruciones basicas, 
-para poder visualizar todas las instruciones de la ALU se tendria que simular cada 3 instruciones ya que ese el el maximo
-permitido por el procesador
+No puede ejecutar
+- lui
+- auipc
 
-4. Solo deja usar 3 registros 
-
-5.Si se usa el mismo registro en las operaciones seguidas presenta un error de simulación , se soluciono asignando ese valor
-a otro registro y luego al registro de destino
 
 RESULTADOS
 ----------
