@@ -8,7 +8,7 @@
 * Abstract:	 Principal Instruction decoder also in charge 
 of extact immeditate value and operators 
 ***********************************************************/
-package ID_MEM
+package TOP
 
 import chisel3._
 import chisel3.util._
@@ -48,14 +48,12 @@ val io = IO(new Bundle {
 	val rs2 = Output(UInt(5.W))
 	val imm = Output(SInt(32.W))
 	val state= Output(UInt(6.W))
-	//val instruc_out = Output(UInt(32.W))
 })
 	val ins=Instructions
 	
 
 	val opcode=Wire(UInt(7.W))
 	opcode:=io.instruc(6,0)
-	//io.instruc_out := io.instruc
 	val funct3=Wire(UInt(3.W))
 	funct3:=io.instruc(14,12)
 	
