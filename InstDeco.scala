@@ -8,12 +8,37 @@
 * Abstract:	 Principal Instruction decoder also in charge 
 of extact immeditate value and operators 
 ***********************************************************/
-package PProcesador
+package ID_MEM
 
 import chisel3._
 import chisel3.util._
 
+object Instructions{	// Control version
+	val numbers=Enum(53)
+	//default
+	val invalid	= numbers(0)
 
+	// U Type
+	val lui  :: auipc :: Nil = numbers.slice(1,3)
+
+	//J Type
+	val jal		= numbers(3)
+	
+	//B Type
+	val beq  :: bne :: blt :: bge :: bltu :: bgeu :: Nil =numbers.slice(4,10)
+
+	//S Type
+	val sb   :: sh  :: sw  :: Nil= numbers.slice(10,13)
+
+	//I Type
+	val jalr ::  lb  :: lh   :: lw   :: lbu    :: lhu   :: addi  :: slti  :: sltiu  :: xori   :: ori    :: Nil = numbers.slice(13,24)
+	val andi :: slli :: srli :: srai :: ebreak :: csrrw :: csrrs :: csrrc :: csrrwi :: csrrsi :: csrrci :: Nil = numbers.slice(24,35)
+
+
+	//R Type
+	val add :: mul :: sub :: sll  :: mulh :: slt :: mulhsu :: sltu :: mulhu :: Nil = numbers.slice(35,44)
+	val xor :: div :: srl :: divu :: sra  :: or  :: rem    :: and  :: remu  :: Nil = numbers.slice(44,53)
+}
 
 class InstDeco extends Module{
 val io = IO(new Bundle {
@@ -23,13 +48,14 @@ val io = IO(new Bundle {
 	val rs2 = Output(UInt(5.W))
 	val imm = Output(SInt(32.W))
 	val state= Output(UInt(6.W))
+	//val instruc_out = Output(UInt(32.W))
 })
 	val ins=Instructions
 	
 
 	val opcode=Wire(UInt(7.W))
 	opcode:=io.instruc(6,0)
-
+	//io.instruc_out := io.instruc
 	val funct3=Wire(UInt(3.W))
 	funct3:=io.instruc(14,12)
 	
@@ -326,9 +352,12 @@ val io = IO(new Bundle {
 }
 
 
-
-
-
+/*
+object InstDecoMain extends App
+{
+	chisel3.Driver.execute(args, () => new InstDeco)
+}
+*/
 
 
 
