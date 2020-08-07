@@ -20,7 +20,7 @@ el decodificador dado a nuestra disposición para el desarrollo de la actividad 
 
 En el archivo TOP se colocan las instrucciones del programa dentro de la estructura ```when ...  elsewhen``` la cual actúa como un multiplexor. El archivo ALU utiliza el ```opcode```, ```funct3``` y ```funct7``` de las palabras de 32 bits de RISC-V para determinar la operación correspondiente. 
 
-Los módulos en scala se situan dentro de un archivo TOP (caja negra) el cual une los archivos nombrados
+Los módulos en scala se situan dentro de un archivo TOP el cual une los archivos nombrados
 anteriormente y con esto podemos simular y generar el  archivo en vivado que se usó para generar el testbench para 
 visualizar las salida del procesador en el GTK Wave
 
