@@ -7,7 +7,7 @@ DIAGRAMA DE BLOQUES
 -------------------
 
 
-
+![DATAPAT](https://github.com/Computer-Architecture-I-UIS/the-processor-maryteam/blob/master/DATAPAT.png)
 
 
 
