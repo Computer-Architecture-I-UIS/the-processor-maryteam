@@ -35,6 +35,9 @@ COMENTARIOS
 4. No se encontró una forma para realizar las operaciones ```lui``` y ```auipc``` dentro de los 4 ciclos de reloj necesarios para cada operación.
 
 5. El valor de operacion aparece en la salida solo luego de 4 ciclos de salida.
+
+
+
 LISTADO DE INSTRUCCIONES 
 ------------------------
 Puede ejecutar:
