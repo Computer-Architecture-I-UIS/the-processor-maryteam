@@ -18,7 +18,7 @@ DESCRIPCIÓN
 Para la simulación y puesta en marcha del procesador se usarón 3 archivos, en los cuales podemos destacar
 el decodificador dado a nuestra disposición para el desarrollo de la actividad  (archivo InstDeco). Se emplearón los archivos de ALU (Unidad Logica de Aritmetica), la cual permitia hacer operaciones basicas como la adición,la sustración el corrimiento de bits la comparación de variables entre otras. Finalmente el archivo TOP, en este se encuentran los otros bloques lógicos del diagrama. Se inicializa una banco de registros de 32 direcciones con un tamaño de palabra de 32 bits. También se encuentra la "memoria de instrucciones". 
 
-En el archivo TOP se colocan las instrucciones del programa dentro de la estructura ```when ...  elsewhen``` la cual actúa como un multiplexor. El archivo ALU utiliza el ```opcode```, ```funct3``` y ```funct7``` de las palabras de 32 bits de RISC-V para determinar la operación correspondiente. 
+En el archivo TOP se colocan las instrucciones del programa dentro de la estructura ```when ...  .elsewhen``` la cual actúa como un multiplexor. El archivo ALU utiliza el ```opcode```, ```funct3``` y ```funct7``` de las palabras de 32 bits de RISC-V para determinar la operación correspondiente. 
 
 Los módulos en scala se situan dentro de un archivo TOP el cual une los archivos nombrados
 anteriormente y con esto podemos simular y generar el  archivo en vivado que se usó para generar el testbench para 
