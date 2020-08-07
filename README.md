@@ -69,7 +69,7 @@ Instrucciones y simulación 1
 ![s1](https://github.com/Computer-Architecture-I-UIS/the-processor-maryteam/blob/master/instruc1.png)
 
 ![Simulacion1](https://github.com/Computer-Architecture-I-UIS/the-processor-maryteam/blob/master/gtk1.png)
-![Simulacion11](https://github.com/Computer-Architecture-I-UIS/the-processor-maryteam/blob/master/gtk1.jpeg)
+
 
 Instrucciones y simulación  2
 
