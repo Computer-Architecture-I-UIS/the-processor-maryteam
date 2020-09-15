@@ -1,0 +1,5 @@
+No veo el test de todas las 16 instrucciones.
+
+Valios de los tes que reportan no son corroborables con lo que muestra el diagrama de tiempo. eje: and, sll.
+
+En el TOP deberían estar todas la pruebas, para yo poder evaluar todos los casos.
